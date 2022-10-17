@@ -12,7 +12,7 @@ import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.Matchers.notNullValue;
 
 @RunWith(Parameterized.class)
-public class CreateOrderParameters {
+public class CreateOrderParametersTests {
     private static String firstName;
     private static String lastName;
     private static String address;
@@ -30,8 +30,8 @@ public class CreateOrderParameters {
         orderData = new OrderData(firstName,lastName, address,  metroStation,  phone,  rentTime,  deliveryDate,  comment, color);
     }
 
-    public CreateOrderParameters(String firstName, String lastName, String address, String metroStation, String phone,
-                                 Integer rentTime, String deliveryDate, String comment, String color) {
+    public CreateOrderParametersTests(String firstName, String lastName, String address, String metroStation, String phone,
+                                      Integer rentTime, String deliveryDate, String comment, String color) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
